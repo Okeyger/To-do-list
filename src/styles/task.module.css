@@ -1,0 +1,47 @@
+.wrapper {
+  padding: 22px 20px;
+  background-color: #15101c;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #9e78cf;
+}
+
+.completed {
+  color: #78cfb0;
+  text-decoration: line-through;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.complete_btn:hover > svg > path {
+  fill: #78cfb0;
+}
+
+.remove_btn:hover > svg > path {
+  fill: #f53939;
+}
