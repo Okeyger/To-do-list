@@ -15,7 +15,7 @@ const Task = ({ id, title, completed }: ITask) => {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <li className={styles.wrapper}>
       <h3 className={`${styles.title} ${completedClass}`}>{title}</h3>
       <div className={styles.actions}>
         {!completed && (
@@ -60,7 +60,7 @@ const Task = ({ id, title, completed }: ITask) => {
           </svg>
         </button>
       </div>
-    </div>
+    </li>
   );
 };
 
